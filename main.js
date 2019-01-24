@@ -30,7 +30,7 @@ function randomImage(){
 
     var image = images [Math.floor(Math.random() * images.length)];
 
-    document.getElementById("picture").textContent= '<img src="'+image+'">';
+    document.getElementById('picture').innerHTML = '<img src=' + image + '>';
 
    
 
