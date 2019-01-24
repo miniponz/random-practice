@@ -26,13 +26,13 @@ function blowMind(){
 
 function randomImage(){
     
-    var images = ['http://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/201805/157190509.jpg', 'http://michaelmurray.ca/wp-content/uploads/2013/11/3.jpg', 'https://cdn.theatlantic.com/assets/media/img/notes/2015/09/Screen_Shot_2015_09_22_at_3.31.27_PM-1/facebook.png?1522838735', 'https://tedconfblog.files.wordpress.com/2012/06/image002.gif'];
+    var images = ['<img src ="http://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/201805/157190509.jpg"></img>', '<img src ="http://michaelmurray.ca/wp-content/uploads/2013/11/3.jpg"></img>', '<img src="https://cdn.theatlantic.com/assets/media/img/notes/2015/09/Screen_Shot_2015_09_22_at_3.31.27_PM-1/facebook.png?1522838735"></img>', '<img src ="https://tedconfblog.files.wordpress.com/2012/06/image002.gif"></img>'];
 
     var image = images [Math.floor(Math.random() * images.length)];
 
-    document.getElementById("picture").textContent= '<img src="'+image+'">';
+    //document.getElementById("picture").textContent= '<img src="'+image+'">';
 
-   
+    document.getElementById("picture").insertAdjacentHTML('afterbegin', image);
 
 
 }
