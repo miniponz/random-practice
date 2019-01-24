@@ -1,8 +1,9 @@
 body {
     text-align: center;
     font-family: 'Times New Roman';
+    color:black;
 };
 
-#disclaimer{
-    font-size: .5em;
-}
+.main {
+    color: blue;
+};
